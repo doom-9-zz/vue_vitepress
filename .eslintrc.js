@@ -8,7 +8,6 @@ module.exports = {
   extends: [
     'plugin:vue/essential',
     'eslint:recommended',
-    '@vue/prettier',
     '@vue/typescript/recommended',
     '@vue/prettier/@typescript-eslint',
   ],
@@ -17,7 +16,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'prettier/prettier': [{ endOfLine: 'auto' }],
   },
   overrides: [
     {
