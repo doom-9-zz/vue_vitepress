@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'prettier/prettier': [{ endOfLine: 'auto' }],
   },
   overrides: [
     {
