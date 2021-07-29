@@ -21,7 +21,7 @@ map:
 ## API
 
 ```ts
-import { Button } from 'vue_vitepress';
+import { Button } from 'vue_vitepress'
 ```
 
 ## Props

@@ -1,33 +1,18 @@
 <template>
   <div>
-    <p>
-      <span style="padding: 0 16px 0 4px; font-size: 14px; color: #777"
-        >点击次数:</span
-      >
-      <span>{{ count }}</span>
-    </p>
-    <Button @click="onClick">按钮</Button>
+    <Button>111</Button>
   </div>
 </template>
 
 <script lang="ts">
-import { Button } from 'vue_vitepress';
-import { ref } from 'vue';
+import { Button } from 'vue_vitepress'
 
 export default {
-  components: {
-    Button,
-  },
+  components: { Button },
   setup() {
-    const count = ref(0);
-    function onClick() {
-      count.value++;
-    }
-
-    return {
-      count,
-      onClick,
-    };
-  },
-};
+    return {}
+  }
+}
 </script>
+
+<style scoped></style>

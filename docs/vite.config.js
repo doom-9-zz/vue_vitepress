@@ -1,8 +1,7 @@
-/**
- * @type {import('vite').UserConfig}
- */
-export default {
-  optimizeDeps: {
-    include: [],
-  },
-};
+// vite.config.ts
+
+import { defineConfig } from 'vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+export default defineConfig({
+  plugins: [vueJsx()]
+})

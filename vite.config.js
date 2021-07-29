@@ -1,5 +1,6 @@
-import { resolve } from 'path';
-import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 /**
  * @type {import('vite').UserConfig}
@@ -7,14 +8,19 @@ import vue from '@vitejs/plugin-vue';
 export default {
   optimizeDeps: {
     include: [],
-    exclude: [],
+    exclude: []
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    vueJsx({
+      // options are passed on to @vue/babel-plugin-jsx
+    })
+  ],
   build: {
     minify: true,
     lib: {
       entry: resolve('./src/index.ts'),
-      name: 'vue_vitepress',
+      name: 'vue_vitepress'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -24,9 +30,9 @@ export default {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-  },
-};
+          vue: 'Vue'
+        }
+      }
+    }
+  }
+}
