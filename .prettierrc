@@ -1,7 +1,10 @@
 {
+  "semi": false,
   "singleQuote": true,
-  "trailingComma": "all",
   "printWidth": 80,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": ".prettierrc",
