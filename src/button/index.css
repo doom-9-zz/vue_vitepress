@@ -1,0 +1,22 @@
+.myButton {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.myButton_default {
+  background-color: #1890ff;
+}
+
+.myButton_warning {
+  background-color: #f0a020;
+}
+
+.myButton_warning:active {
+  background-color: #c97c10;
+}

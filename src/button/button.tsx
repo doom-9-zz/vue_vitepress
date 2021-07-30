@@ -1,9 +1,26 @@
-import { defineComponent } from 'vue'
+import { defineComponent, PropType, toRef } from 'vue'
+import './index.css'
 
-// named exports referencing variable declaration: ok
-const Bar = defineComponent({
+export default defineComponent({
+  props: {
+    type: {
+      type: String as PropType<'default' | 'warning'>,
+      default: 'default'
+    }
+  },
+  setup: props => {
+    return {
+      type: toRef(props, 'type')
+    }
+  },
   render() {
-    return <div>Test</div>
+    const { $slots } = this
+    console.log(this.type)
+
+    return (
+      <div class={{ myButton: true, [`myButton_${this.type}`]: true }}>
+        {$slots.default && $slots.default()}
+      </div>
+    )
   }
 })
-export default Bar
