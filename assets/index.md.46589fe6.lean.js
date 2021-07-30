@@ -1,0 +1,1 @@
+import{o as t,c as e,a}from"./app.ad5302dd.js";const n={components:{}},r='{"title":"","description":"","frontmatter":{},"relativePath":"index.md","lastUpdated":1627369279873}',d=a("p",null,"在这里写介绍文档。",-1);n.render=function(a,n,r,o,p,i){return t(),e("div",null,[d])};export default n;export{r as __pageData};
