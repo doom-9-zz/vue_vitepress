@@ -12,10 +12,18 @@ map:
 
 ### 基本用法
 
-<demo src="./demo/demo.vue"
+<demo src="./demo/default.vue"
   language="vue"
   title="基本用法"
-  desc="点击切换。">
+  desc="默认按钮。">
+</demo>
+
+### 按钮大小
+
+<demo src="./demo/size.vue"
+  language="vue"
+  title="尺寸"
+  desc="按钮尺寸。">
 </demo>
 
 ## API
@@ -26,7 +34,7 @@ import { Button } from 'vue_vitepress'
 
 ## Props
 
-| 参数  | 说明 |   类型 |         值 |
-| ----- | ---: | -----: | ---------: |
-| size  | 大小 | string | 例如'16px' |
-| color | 颜色 | string |  例如'red' |
+| 参数 | 说明 |   类型 |        值 |
+| ---- | ---: | -----: | --------: | --------- | ------- |
+| size | 大小 | string |   'small' | 'medium'  | 'large' |
+| type | 类型 | string | 'default' | 'warning' |

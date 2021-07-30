@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <Button>111</Button>
-    <Button type="warning">111</Button>
+  <div class="container">
+    <Button>hello</Button>
+    <Button type="warning">world</Button>
   </div>
 </template>
 
@@ -16,4 +16,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: flex;
+}
+</style>

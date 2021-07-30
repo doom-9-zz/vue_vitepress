@@ -6,6 +6,10 @@ export default defineComponent({
     type: {
       type: String as PropType<'default' | 'warning'>,
       default: 'default'
+    },
+    size: {
+      type: String as PropType<'small' | 'medium' | 'large'>,
+      default: 'medium'
     }
   },
   setup: props => {
@@ -15,10 +19,16 @@ export default defineComponent({
   },
   render() {
     const { $slots } = this
-    console.log(this.type)
 
     return (
-      <div class={{ myButton: true, [`myButton_${this.type}`]: true }}>
+      <div
+        class={{
+          zButton: true,
+          [`zButton_${this.type}`]: true,
+          [`zButton_${this.size}`]: true
+        }}
+        aria-label="button"
+      >
         {$slots.default && $slots.default()}
       </div>
     )

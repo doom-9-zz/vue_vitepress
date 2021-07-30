@@ -1,22 +1,51 @@
-.myButton {
-  width: 100px;
-  height: 40px;
+.zButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 3px;
   text-align: center;
-  line-height: 40px;
   color: #fff;
   cursor: pointer;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.myButton_default {
-  background-color: #1890ff;
+.zButton:hover {
+  transform: translateY(-2%);
 }
 
-.myButton_warning {
+.zButton:active {
+  transform: translateY(0%);
+}
+
+.zButton_small {
+  width: 80px;
+  height: 30px;
+}
+
+.zButton_medium {
+  width: 100px;
+  height: 40px;
+}
+
+.zButton_large {
+  width: 120px;
+  height: 50px;
+}
+
+.zButton_default {
+  background-color: #4098fc;
+}
+
+.zButton_warning {
   background-color: #f0a020;
 }
 
-.myButton_warning:active {
+.zButton_default:active {
+  background-color: #1060c9;
+}
+
+.zButton_warning:active {
   background-color: #c97c10;
 }
